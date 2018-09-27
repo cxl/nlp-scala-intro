@@ -1,0 +1,9 @@
+
+val e1 = BinOp("*", Num(12.0), UnOp("-", BinOp("+", Num(2.3), Num(3.7))))
+	  
+val e2 = BinOp("*", UnOp("-", Var("x")), BinOp("+", Num(3), Var("y")))
+
+val g = Map("x" -> 7.0, "pi" -> 3.14159)
+
+val e3 = BinOp("*", Var("pi"), UnOp("-", Var("x")))
+
